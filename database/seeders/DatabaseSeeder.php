@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\CoffeeSupply;
 use App\Models\User;
 use App\Models\Student;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -18,7 +19,7 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        Student::factory(200)->create();
+        CoffeeSupply::factory(10)->create();
 
         User::factory()->create([
             'name' => 'Test User',

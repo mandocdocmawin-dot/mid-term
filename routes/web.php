@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StudentController;
+use App\Http\Controllers\CoffeeSupplyController;
 
 Route::get('/', function () {
-    return redirect()->route('students.index');
+    return redirect()->route('CoffeeSupplys.index');
 });
 
-Route::resource('students', StudentController::class);
+Route::resource('CoffeeSupplys', CoffeeSupplyController::class);
